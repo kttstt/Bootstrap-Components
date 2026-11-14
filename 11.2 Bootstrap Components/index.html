@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+      }
+      /* body {
+        font-family: var(--bs-font-mono);
+      } */
+      .d-flex {
+        margin-left: 900px;
+      }
+      .navbar > .container-fluid {
+        justify-content: unset;
+      }
+      .nav {
+        --bs-nav-link-padding-x: 0.4rem;
+
+        --bs-nav-link-color: #6c757d;
+      }
+      .shadow-lg {
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      }
+      .text-bg-primary {
+        color: #fff !important;
+        background-color: RGBA(
+          13,
+          110,
+          253,
+          var(--bs-bg-opacity, 1)
+        ) !important;
+      }
+      .btn-icon {
+        background: unset;
+        color: white;
+        margin-bottom: 40%;
+      }
+      .carousel-icon-prev {
+        width: 2rem;
+        height: 2rem;
+      }
+      .carousel-icon-next {
+        width: 2rem;
+        height: 2rem;
+      }
+      ul li {
+        margin-bottom: 0.5rem !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navb bg-1 fg-2 md:navbar-expand p-3 bg-secondary bg-gradient fg-contrast-secondary"
+    >
+      <div class="container-fluid nospace">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./box-seam.svg"
+            alt="Logo"
+            width="30"
+            height="30px"
+            class="d-inline-block align-text-top"
+          />
+          Move It
+        </a>
+        <ul class="nav flex-row ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Service</a>
+          </li>
+        </ul>
+        <form class="d-flex nospace" role="Postcode">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Postcode"
+            aria-label="Postcode"
+          />
+          <button type="button" class="btn-outline theme-success">Check</button>
+
+          <!-- <button class="btn btn-outline-success" type="submit">Check</button> -->
+        </form>
+      </div>
+    </nav>
+    <div style="text-align: center; margin-top: 60px">
+      <h1 style="font-weight: 700; font-size: 3.5rem">Move With Joy</h1>
+      <p
+        style="
+          margin-top: 10px;
+          padding-left: 25.5%;
+          padding-right: 25.5%;
+          font-family: var(--bs-body-font-family);
+          font-size: 1.25rem;
+          font-weight: 300;
+        "
+      >
+        Welcome to our website, where we are on a mission to provide exceptional
+        moving services to customers in the US. As a startup, we believe that
+        moving doesn't have to be stressful or complicated, and we are
+        passionate about making the process as seamless and enjoyable as
+        possible.
+      </p>
+      <div>
+        <button
+          style="width: 140px; height: 45px; margin-right: 20px"
+          type="button"
+          class="btn-solid theme-primary"
+        >
+          Get A Qout
+        </button>
+        <button
+          style="width: 140px; height: 45px"
+          type="button"
+          class="btn-outline theme-secondary"
+        >
+          Contact Us
+        </button>
+      </div>
+
+      <div class="container px-5" style="margin-top: 20px">
+        <img
+          src="./moving-van.jpg"
+          class="img-fluid border rounded-3 shadow-lg mb-4"
+          alt="Example image"
+          width="700"
+          height="500"
+          loading="lazy"
+        />
+        <hr />
+      </div>
+    </div>
+    <div class="container" style="max-width: 1320px; margin-top: 80px">
+      <div class="row">
+        <!-- titile -->
+        <div class="col-12">
+          <h2 class="pb-2 border-bottom">Why Move With Us?</h2>
+        </div>
+        <!-- Cards -->
+        <div
+          class="row"
+          style="padding-top: 3rem !important; padding-bottom: 3rem !important"
+        >
+          <div class="card col-4 border-0">
+            <div class="card-body">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <img
+                  src="./briefcase.svg"
+                  alt="briefcase"
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <h4
+                class="card-title"
+                style="font-size: calc(1.325rem + 0.9vw) !important"
+              >
+                Professional
+              </h4>
+              <p class="card-text">
+                Our team of professional movers are trained to prioritize
+                efficiency, organization, and attention to detail. We understand
+                that your possessions are more than just objects - they are a
+                reflection of your life, memories, and experiences. That's why
+                we take extra care to ensure that everything is packed and
+                transported with the utmost care and attention
+              </p>
+              <a href="#">Get a qoute</a>
+            </div>
+          </div>
+          <div class="card col-4 border-0">
+            <div class="card-body">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <img
+                  src="./bus-front.svg"
+                  alt="briefcase"
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <h4
+                class="card-title"
+                style="font-size: calc(1.325rem + 0.9vw) !important"
+              >
+                Countrywide
+              </h4>
+              <p class="card-text">
+                We offer a range of services to suit your individual needs,
+                whether you're moving locally or across the country. Our team
+                can handle everything from packing and loading to unloading and
+                unpacking, so you can focus on settling into your new home. And
+                with our transparent pricing and no hidden fees, you can trust
+                that you're getting a fair and competitive rate for our
+                services.
+              </p>
+              <a href="#">Get a qoute</a>
+            </div>
+          </div>
+          <div class="card col-4 border-0">
+            <div class="card-body">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <img
+                  src="./chat-square-heart.svg"
+                  alt="briefcase"
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <h4
+                class="card-title"
+                style="font-size: calc(1.325rem + 0.9vw) !important"
+              >
+                Personal Touch
+              </h4>
+
+              <p class="card-text">
+                At our core, we believe that moving should be an exciting and
+                positive experience, not a stressful one. By providing
+                exceptional moving services in the US, we hope to revolutionize
+                the way people think about moving and provide a better, more
+                personalized experience for our customers. Contact us today to
+                learn more about how we can help you with your next move.
+              </p>
+              <a href="#">Get a qoute</a>
+            </div>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="col-12">
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-overlay slide"
+            data-bs-theme="dark"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="./couple.jpg"
+                  class="d-block w-100 rounded-5"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="./dog.jpg"
+                  class="d-block w-100 rounded-5"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./family.jpg"
+                  class="d-block w-100 rounded-5"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-overlay-controls">
+              <button
+                class="btn-icon btn-sm btn-subtle theme-secondary"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                class="btn-icon btn-sm btn-subtle theme-secondary"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- Footer -->
+        <div class="row" style="font-size: larger; padding-top: 30px">
+          <div
+            class="col-2"
+            style="
+              justify-content: center;
+              flex-direction: column;
+              display: flex;
+            "
+          >
+            <p>© 2023</p>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-2" style="text-align: center">
+            <ul style="list-style-type: none">
+              <li style="font-weight: bold">Section</li>
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Features</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div class="col-2" style="text-align: right">
+            <ul style="list-style-type: none">
+              <li style="font-weight: bold">Section</li>
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Features</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div class="col-3" style="text-align: right; padding-right: 50px">
+            <ul style="list-style-type: none">
+              <li style="font-weight: bold">Section</li>
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Features</li>
+              <li>About</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
